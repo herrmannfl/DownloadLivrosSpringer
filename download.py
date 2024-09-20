@@ -6,7 +6,7 @@ import xlrd
 import time
 
 print("Baixando lista de livros do site da Springer...")
-urllib.request.urlretrieve("https://resource-cms.springernature.com/springer-cms/rest/v1/content/17858272/data/v5", "livros.xlsx")
+urllib.request.urlretrieve("https://resource-cms.springernature.com/springer-cms/rest/v1/content/17858272/data/v8", "livros.xlsx")
 print("Criando dicionário do arquivo baixado....")
 workbook = xlrd.open_workbook('livros.xlsx')
 worksheet = workbook.sheet_by_index(0)
